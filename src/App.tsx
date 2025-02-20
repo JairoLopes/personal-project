@@ -24,7 +24,7 @@ function App() {
         {/* Navbar --------- será exibida se dentro dela o menuOpen for true */}
         <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-        {/* MobileMenu ------------- Menu será ebixido se dentro dele o meuOpen for true */}
+        {/* MobileMenu ------------- Menu será ebixido se dentro dele o menuOpen for true */}
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
         {/* HOME ------- */}
