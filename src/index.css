@@ -90,7 +90,7 @@ body {
       rgb(13, 12, 12, 0.95),
       rgb(13, 12, 12, 0.97)
     ),
-    url("img/Img_About/gym.jpg");
+    url("/img/Img_About/gym.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
