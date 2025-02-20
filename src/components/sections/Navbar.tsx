@@ -20,12 +20,12 @@ const NavBar = (props: navProps) => {
         <div className="flex justify-between items-center h-16">
           {/* LOGO NOME*/}
           <img
-            src="../../../Image/Logo/A10.png"
+            src="/img/Logo/A10.png"
             alt="LogoMarca"
             className="hidden md:block w-56"
           />
           <img
-            src="../../../Image/Logo/A4.png"
+            src="/img/Logo/A4.png"
             alt="LogoMarca"
             className="w-13 block md:hidden"
           />
