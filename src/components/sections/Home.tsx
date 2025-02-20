@@ -48,7 +48,7 @@ const Home = () => {
         {/* Container que engloba o lado direito, imagem de perfil */}
         <div className="">
           <img
-            src="../../../Image/Img_Hero/profile2.png"
+            src="/img/Img_Hero/profile2.png"
             alt=""
             className="p-1 w-[250px] lg:w-[400px] rounded-b-full shadow-2xl shadow-mainTheme"
           />
