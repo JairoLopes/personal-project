@@ -3,6 +3,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import NavBar from "./components/sections/Navbar";
 import MobileMenu from "./components/sections/MobileMenu";
 import Home from "./components/sections/Home";
+import Formacao from "./components/sections/Formacao";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -16,7 +17,7 @@ function App() {
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
       <div
         /* Se isloaded for true, exibe(opacity-100) todos os componentes dentro desta div, se for false, recebe opacidade 0*/
-        className={`min-h-screen transition-opacity duration-700 ${
+        className={`min-h-screen transition-opacity duration-700 overflow-x-hidden ${
           isLoaded ? "opacity-100" : "opacity-0"
         } bg-deepBlue text-myWhite`}
       >
@@ -29,6 +30,9 @@ function App() {
         {/* HOME ------- */}
         {/* Aqui so vai renderizar o Home quando o Loadscreen tiver finalizado, para serem visíveis as animações de carregamento */}
         {isLoaded && <Home />}
+
+        {/* FORMAÇÃO */}
+        <Formacao />
       </div>
     </>
   );

@@ -22,6 +22,9 @@ body {
   --color-deepBlue: #0d0c0c;
   --color-navBlack: #000;
 
+  /* BREAKPOINTS */
+  --breakpoint-smallHome: 639px;
+
   /* ANIMAÇÕES */
   /* Animação de carregamento */
   --animate-loading: loading 0.8s ease-in-out infinite;
@@ -82,7 +85,15 @@ body {
 }
 
 .home-bg {
-  @apply bg-[url("../Image/Img_Hero/YYYY.png")] bg-cover bg-center opacity-20;
+  background: linear-gradient(
+      to right,
+      rgb(13, 12, 12, 0.95),
+      rgb(13, 12, 12, 0.97)
+    ),
+    url("img/Img_About/gym.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 strong {
@@ -137,7 +148,7 @@ strong {
          overflow-hidden rounded-sm border border-mainTheme shadow-lg;
 
   /* Estilização do before (efeito de fundo animado) */
-  @apply transition-all duration-1000;
+  @apply transition-all duration-600;
 
   @apply shadow-mainTheme hover:shadow-secondaryTheme hover:border-secondaryTheme hover:-translate-y-1;
 }

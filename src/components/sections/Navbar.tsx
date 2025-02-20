@@ -15,20 +15,23 @@ const NavBar = (props: navProps) => {
   }, [props.menuOpen]);
 
   return (
-    <nav className="sticky lg:fixed top-0 w-full z-40 bg-navBlack backdrop-blur-lg border-white/10">
+    <nav className="fixed top-0 w-full z-40 bg-navBlack backdrop-blur-lg border-b-1 border-white/10">
       <div className="max-w-5xl mx-auto px-4 p-3">
         <div className="flex justify-between items-center h-16">
           {/* LOGO NOME*/}
-          <img
-            src="/img/Logo/A10.png"
-            alt="LogoMarca"
-            className="hidden md:block w-56"
-          />
-          <img
-            src="/img/Logo/A4.png"
-            alt="LogoMarca"
-            className="w-13 block md:hidden"
-          />
+          <a href="#home">
+            <img
+              src="/img/Logo/A10.png"
+              alt="LogoMarca"
+              className="hidden md:block w-56"
+            />
+            <img
+              src="/img/Logo/A4.png"
+              alt="LogoMarca"
+              className="w-13 block md:hidden"
+            />
+          </a>
+
           {/* CONTAINER DO ICONE HAMBURGUER*/}
           <div
             id="burger-zip"
