@@ -11,7 +11,8 @@ const Home = () => {
     /* FALTA POR O BACKGROUND  E A FRASE ANDANDO PELA SESSÃO*/
     <section
       id="home"
-      className="home-bg min-h-screen flex justify-center items-center relative pb-20 max-sm:pt-[35%] sm:pt-[25%] md:pt-[20%] lg:pt-[10%]"
+      className="lg:bg-[linear-gradient(to_right,rgb(13,12,12,0.9),rgb(13,12,12,0.97)),url('/img/Img_About/gym.jpg')] bg-no-repeat bg-fixed bg-cover
+       min-h-screen flex justify-center items-center relative pb-20 max-sm:pt-[35%] sm:pt-[25%] md:pt-[20%] lg:pt-[10%]"
     >
       {/* Div que engloba todo o HOME */}
       <div className="flex flex-col items-center justify-center max-w-5xl gap-14 lg:px-7 lg:flex-row">

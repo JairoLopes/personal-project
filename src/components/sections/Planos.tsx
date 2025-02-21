@@ -48,7 +48,11 @@ const Planos = () => {
   ];
 
   return (
-    <section id="planos" className="section-style plans-bg">
+    <section
+      id="planos"
+      className="section-style 
+    lg:bg-[linear-gradient(to_right,rgb(13,12,12,0.97),rgb(13,12,12,0.9)),url('/img/img_Plans/plans_bg.jpg')] bg-no-repeat bg-fixed bg-cover"
+    >
       {/* Div que engloba todo o PLANOS */}
       <div className="max-w-4xl mx-auto px-6">
         <motion.h2

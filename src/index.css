@@ -97,27 +97,11 @@ body {
 }
 
 .home-bg {
-  background: linear-gradient(
-      to right,
-      rgb(13, 12, 12, 0.9),
-      rgb(13, 12, 12, 0.97)
-    ),
-    url("/img/Img_About/gym.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  /* bg-[linear-gradient(to_right,rgb(13,12,12,0.9),rgb(13,12,12,0.97)),url('/img/Img_About/gym.jpg')] bg-no-repeat bg-fixed bg-cover */
 }
 
 .plans-bg {
-  background: linear-gradient(
-      to right,
-      rgb(13, 12, 12, 0.97),
-      rgb(13, 12, 12, 0.9)
-    ),
-    url("/img/img_Plans/plans_bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  /* bg-[linear-gradient(to_right,rgb(13,12,12,0.97),rgb(13,12,12,0.9)),url('/img/img_Plans/plans_bg.jpg')] bg-no-repeat bg-fixed bg-cover */
 }
 
 strong {
