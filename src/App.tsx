@@ -4,6 +4,7 @@ import NavBar from "./components/sections/Navbar";
 import MobileMenu from "./components/sections/MobileMenu";
 import Home from "./components/sections/Home";
 import Formacao from "./components/sections/Formacao";
+import Planos from "./components/sections/Planos";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -33,6 +34,9 @@ function App() {
 
         {/* FORMAÇÃO */}
         <Formacao />
+
+        {/* PLANOS */}
+        <Planos />
       </div>
     </>
   );

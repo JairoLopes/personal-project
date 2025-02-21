@@ -80,14 +80,26 @@ body {
   }
 }
 
+.gradient-text {
+  @apply bg-gradient-to-r from-sky-600 via-mainTheme to-blue-600 bg-clip-text text-transparent;
+}
+
+.gradient-text2 {
+  @apply bg-gradient-to-r from-myWhite/90 to-myWhite/95 bg-clip-text text-transparent;
+}
+
 .section-style {
   @apply min-h-screen flex justify-center pt-[10%] pb-20;
+}
+
+.h2-style {
+  @apply text-3xl lg:text-4xl font-bold mb-8 text-center;
 }
 
 .home-bg {
   background: linear-gradient(
       to right,
-      rgb(13, 12, 12, 0.95),
+      rgb(13, 12, 12, 0.9),
       rgb(13, 12, 12, 0.97)
     ),
     url("/img/Img_About/gym.jpg");
@@ -96,16 +108,20 @@ body {
   background-size: cover;
 }
 
+.plans-bg {
+  background: linear-gradient(
+      to right,
+      rgb(13, 12, 12, 0.97),
+      rgb(13, 12, 12, 0.9)
+    ),
+    url("/img/img_Plans/plans_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 strong {
   @apply text-secondaryTheme italic;
-}
-
-.gradient-text {
-  @apply bg-gradient-to-r from-sky-600 via-mainTheme to-blue-600 bg-clip-text text-transparent;
-}
-
-.gradient-text2 {
-  @apply bg-gradient-to-r from-myWhite/90 to-myWhite/95 bg-clip-text text-transparent;
 }
 
 .btn-hover {
