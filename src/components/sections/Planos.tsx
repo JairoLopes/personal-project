@@ -70,7 +70,7 @@ const Planos = () => {
             initial={slideUpFadeIn.initial}
             whileInView={slideUpFadeIn.animate}
             transition={{ duration: 0.8 }}
-            className="gradient-text font-bold text-2xl lg:w-3xl animate-pulse"
+            className="gradient-text font-bold text-2xl lg:text-3xl animate-pulse"
           >
             Promoção de verão
           </motion.h3>

@@ -6,6 +6,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.swiper-pagination {
+  @apply flex p-2 justify-center !bg-black/75;
+}
+
+.swiper-pagination-bullet {
+  @apply !w-4 !h-4  transition-all duration-500;
+}
+
 html,
 body {
   background-color: #000000; /* Cor durante a transição */
@@ -131,12 +139,10 @@ strong {
          overflow-hidden rounded-sm border border-mainTheme shadow-lg;
 
   /* Estilização do before (efeito de fundo animado) */
-  @apply before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center 
-         before:-translate-x-20 before:rotate-45 before:bg-mainTheme before:duration-1000;
+  @apply before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-mainTheme before:duration-1000;
 
   /* Estilização do hover */
-  @apply shadow-mainTheme hover:shadow-none transition-shadow duration-1000 hover:before:h-64 
-         hover:before:-translate-y-32;
+  @apply shadow-mainTheme hover:shadow-none transition-shadow duration-1000 hover:before:h-64 hover:before:-translate-y-32;
 
   /* Estilização do active */
   @apply active:scale-95;
@@ -144,14 +150,10 @@ strong {
 
 .btn-submit {
   /* Estilização padrão */
-  @apply bg-deepBlue text-white py-3 px-6 font-medium transition relative 
-         overflow-hidden rounded-sm border border-mainTheme shadow-lg;
+  @apply bg-deepBlue text-white py-3 px-6 font-medium transition relative overflow-hidden rounded-sm border border-mainTheme shadow-lg;
 
   /* Estilização do before (efeito de fundo animado) */
   @apply transition-all duration-600;
 
   @apply shadow-mainTheme hover:shadow-secondaryTheme hover:border-secondaryTheme hover:-translate-y-1;
-}
-.input-style {
-  @apply w-full bg-white/5 font-semibold border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-secondaryTheme focus:bg-secondaryTheme/5;
 }

@@ -1,78 +1,103 @@
-import { useState } from "react";
+import Slider from "react-slick";
 
 function Resultados() {
-  const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "Image/img_Resultado_Alunos/tai.jpeg",
-    "Image/img_Resultado_Alunos/barbara.jpeg",
-    "Image/img_Resultado_Alunos/julio.png",
-    "Image/img_Resultado_Alunos/felipe.png",
-    "Image/img_Resultado_Alunos/dias.jpeg",
-    "Image/img_Resultado_Alunos/pep.png",
-    "Image/img_Resultado_Alunos/Rhuana.jpeg",
-    "Image/img_Resultado_Alunos/iris.png",
+    { path: "/img/img_Resultado_Alunos/tai.jpeg" },
+    { path: "/img/img_Resultado_Alunos/barbara.jpeg" },
+    { path: "/img/img_Resultado_Alunos/julio.png" },
+    { path: "/img/img_Resultado_Alunos/felipe.png" },
+    { path: "/img/img_Resultado_Alunos/dias.jpeg" },
+    { path: "/img/img_Resultado_Alunos/pep.png" },
+    { path: "/img/img_Resultado_Alunos/Rhuana.jpeg" },
+    { path: "/img/img_Resultado_Alunos/iris.png" },
   ];
 
-  const handleStepClick = (index: number) => {
-    if (index >= 0 && index < images.length) {
-      setCurrentImage(index);
-    }
+  const setting = {
+    dots: true,
+    arrow: true,
+    infinite: true,
+    centerMode: true,
+    speed: 400,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    pauseOnHover: true,
+    pauseOnFocus: true,
+
+    /* Breakpoints */
+    responsive: [
+      {
+        breakpoint: 10000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          arrow: true,
+        },
+      },
+    ],
   };
 
   return (
-    <section id="results">
-      <div className="title_global_wrapped">
-        <h1 className="to-hide">Resultados</h1>
-      </div>
+    <section id="resultados" className="section-style">
+      {/* Container que engloba resultados */}
+      <div className="max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-6">
+        <h1 className="h2-style">Resultados</h1>
 
-      <div id="zip-results">
-        <div id="titles-zip">
-          <div id="sub-titles-zip">
-            <h1 className="to-hide">Vem pro time!</h1>
-            <p className="to-hide">
-              Seguindo minha metodologia, somada a sua disciplina e constância,
-              seremos capazes de obter resultados significativos em um tempo que
-              nem você esperaria.
-            </p>
-          </div>
+        {/* Container dos titulos "VEM PRO TIME" */}
+        <div className="flex flex-col items-center gap-8 border-1 p-4 border-gray-600/20 shadow-2xl shadow-gray-950 rounded-2xl ">
+          <h1 className="gradient-text font-bold text-2xl lg:text-3xl">
+            Vem pro time!
+          </h1>
+          <p>
+            Seguindo minha metodologia, somada a sua disciplina e constância,
+            seremos capazes de obter resultados significativos em um tempo que
+            nem você esperaria.
+          </p>
         </div>
 
-        <div id="img-zip">
-          <div id="images" className="to-hide !duration-700">
-            <img
-              src={images[currentImage]}
-              alt={`Resultado ${currentImage + 1}`}
-              style={{ width: "500px", height: "400px", objectFit: "cover" }}
-            />
-          </div>
-          <div className="flex justify-center gap-4 mt-4">
-            {" "}
-            {/* Container para os botões */}
-            <button
-              onClick={() => handleStepClick(currentImage - 1)}
-              disabled={currentImage === 0}
-              className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50" // Estilos de exemplo
-            >
-              Anterior
-            </button>
-            <button
-              onClick={() => handleStepClick(currentImage + 1)}
-              disabled={currentImage === images.length - 1}
-              className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50" // Estilos de exemplo
-            >
-              Próxima
-            </button>
-          </div>
+        {/* Container de slides */}
+        <div className="mt-9">
+          <Slider {...setting}>
+            {images.map((item, index) => (
+              <div key={index} className="flex flex-col gap-4 p-8">
+                <div>
+                  <div className="flex justify-items-start items-center gap-2 ">
+                    <img
+                      src={item.path}
+                      alt=""
+                      className="w-[300px] h-[250px] border rounded object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
-      </div>
-
-      <div id="container-meus-resultados" className="to-hide">
-        <a href="results.html" target="_blank">
-          Minha evolução
-        </a>
-        <a className="" href="conquistas.html" target="_blank">
-          Conquistas
-        </a>
       </div>
     </section>
   );
