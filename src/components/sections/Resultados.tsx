@@ -23,8 +23,6 @@ function Resultados() {
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
-
-    /* Breakpoints */
     responsive: [
       {
         breakpoint: 10000,
@@ -64,16 +62,16 @@ function Resultados() {
 
   return (
     <section id="resultados" className="section-style">
-      {/* Container que engloba resultados */}
-      <div className="max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-6">
-        <h1 className="h2-style">Resultados</h1>
+      {/* Container principal responsivo */}
+      <div className="w-full max-w-6xl mx-auto px-4">
+        <h1 className="h2-style text-center">Resultados</h1>
 
-        {/* Container dos titulos "VEM PRO TIME" */}
-        <div className="flex flex-col items-center gap-8 border-1 p-4 border-gray-600/20 shadow-2xl shadow-gray-950 rounded-2xl ">
-          <h1 className="gradient-text font-bold text-2xl lg:text-3xl">
+        {/* Container dos títulos "VEM PRO TIME" */}
+        <div className="w-full max-w-3xl mx-auto flex flex-col items-center gap-8 border p-4 border-gray-600/20 shadow-2xl shadow-gray-950 rounded-2xl mt-8">
+          <h1 className="gradient-text font-bold text-2xl lg:text-3xl text-center">
             Vem pro time!
           </h1>
-          <p>
+          <p className="text-center">
             Seguindo minha metodologia, somada a sua disciplina e constância,
             seremos capazes de obter resultados significativos em um tempo que
             nem você esperaria.
@@ -81,18 +79,16 @@ function Resultados() {
         </div>
 
         {/* Container de slides */}
-        <div className="mt-9">
+        <div className="mt-9 px-2 md:px-10">
           <Slider {...setting}>
             {images.map((item, index) => (
               <div key={index} className="flex flex-col gap-4 p-8">
-                <div>
-                  <div className="flex justify-items-start items-center gap-2 ">
-                    <img
-                      src={item.path}
-                      alt=""
-                      className="w-[300px] h-[250px] border rounded object-cover"
-                    />
-                  </div>
+                <div className="flex justify-center">
+                  <img
+                    src={item.path}
+                    alt=""
+                    className="w-full sm:w-[300px] h-[250px] border rounded object-cover"
+                  />
                 </div>
               </div>
             ))}

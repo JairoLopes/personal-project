@@ -7,7 +7,6 @@ import Formacao from "./components/sections/Formacao";
 import Planos from "./components/sections/Planos";
 import Resultados from "./components/sections/Resultados";
 
-
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
