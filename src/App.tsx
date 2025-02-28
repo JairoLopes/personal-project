@@ -6,7 +6,7 @@ import Home from "./components/sections/Home";
 import Formacao from "./components/sections/Formacao";
 import Planos from "./components/sections/Planos";
 import Resultados from "./components/sections/Resultados";
-import Slick from "./components/sections/Slick";
+
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
