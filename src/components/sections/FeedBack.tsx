@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import { slideUpFadeIn } from "../../animations";
-import { slideLeft } from "../../animations";
 
 const FeedBack = () => {
   const testimonials = [
