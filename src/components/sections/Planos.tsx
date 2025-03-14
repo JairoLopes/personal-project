@@ -81,7 +81,7 @@ const Planos = () => {
             transition={{ duration: 0.8 }}
             className="text-xl font-bold text-secondaryTheme animate-balanco hover:animate-none active:animate-none"
           >
-            Até dia 28/02
+            Até dia 31/03
           </motion.h4>
         </div>
 
@@ -120,7 +120,7 @@ const Planos = () => {
               <div className="pt-4 border-t-1 border-myWhite/40">
                 {/* No preço, temos uma condicional, se o tipo do plano for promocional, fica amarelo */}
                 <h1
-                  className={`text-4xl font-extrabold ${
+                  className={`text-2xl sm:text-4xl font-extrabold ${
                     i.tipoPlano === "Plano promocional"
                       ? "text-secondaryTheme"
                       : "text-mainTheme"

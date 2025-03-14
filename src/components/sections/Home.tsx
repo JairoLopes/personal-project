@@ -23,7 +23,7 @@ const Home = () => {
             initial={slideDownFadeIn.initial}
             whileInView={slideDownFadeIn.animate}
             transition={{ duration: 1 }}
-            className="gradient-text2 text-nowrap text-5xl lg:text-7xl font-bold transition-all duration-500"
+            className="gradient-text2 text-nowrap text-4xl sm:text-6xl lg:text-7xl font-bold transition-all duration-500"
           >
             Talles Furtado
           </motion.h1>
@@ -42,7 +42,7 @@ const Home = () => {
             initial={slideUpFadeIn.initial}
             whileInView={slideUpFadeIn.animate}
             transition={{ duration: 0.8 }}
-            className="mt-2 max-w-[600px] lg:w-full lg:text-start"
+            className="text-sm px-3 sm:text-[18px] mt-2 max-w-[600px] lg:w-full lg:text-start"
           >
             <strong> Bacharel em Ed.Física </strong>, Atleta e Praticante de
             musculação há mais de <strong>7 anos</strong>. Transformando a vida
@@ -57,7 +57,7 @@ const Home = () => {
               whileInView={slideRight.animate}
               transition={{ duration: 0.8 }}
               href="#planos"
-              className="flex justify-center items-center text-lg btn-submit font-bold text-myWhite"
+              className="flex justify-center items-center text-sm sm:text-lg btn-submit font-bold text-myWhite"
             >
               Planos
             </motion.a>
@@ -70,7 +70,7 @@ const Home = () => {
               id="whats"
               href="https://api.whatsapp.com/send/?phone=558198955665&text&type=phone_number&app_absent=0"
               target="_blank"
-              className="flex justify-center items-center gap-2 text-lg btn-submit font-bold text-myWhite"
+              className="flex justify-center items-center gap-2 text-sm sm:text-lg btn-submit font-bold text-myWhite"
             >
               <i className="bx bxl-whatsapp text-4xl"></i>
               Whatsapp

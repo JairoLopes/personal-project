@@ -6,14 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.swiper-pagination {
-  @apply flex p-2 justify-center !bg-black/75;
-}
-
-.swiper-pagination-bullet {
-  @apply !w-4 !h-4  transition-all duration-500;
-}
-
 html,
 body {
   background-color: #000000; /* Cor durante a transição */
@@ -32,6 +24,11 @@ body {
 
   /* BREAKPOINTS */
   --breakpoint-smallHome: 639px;
+  --breakpoint-mobNav: 875px;
+  --breakpoint-mobRes: 475px;
+  --breakpoint-mobTF: 425px;
+  --breakpoint-mobFD: 250px;
+  --breakpoint-mobFD2: 351px;
 
   /* ANIMAÇÕES */
   /* Animação de carregamento */

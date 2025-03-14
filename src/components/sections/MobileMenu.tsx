@@ -77,6 +77,18 @@ const MobileMenu = (props: navProps) => {
       >
         Resultados
       </a>
+      {/* CONQUISTAS */}
+      <a
+        href="#conquistas"
+        onClick={() => props.setMenuOpen(false)}
+        className={`text-2xl font-semibold text-white mt-4 transform transition-transform duration-800 ${
+          props.menuOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-32"
+        }`}
+      >
+        Conquistas
+      </a>
       {/* FEEDBACK */}
       <a
         href="#feedback"

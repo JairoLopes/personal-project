@@ -18,17 +18,17 @@ const NavBar = (props: navProps) => {
     <nav className="fixed top-0 w-full z-40 bg-navBlack backdrop-blur-lg border-b-1 border-white/10">
       <div className="max-w-5xl mx-auto px-4 p-3">
         <div className="flex justify-between items-center h-16">
-          {/* LOGO NOME*/}
+          {/* LOGO, link onde ficam as imagens de logo*/}
           <a href="#home">
             <img
               src="/img/Logo/A10.png"
               alt="LogoMarca"
-              className="hidden md:block w-56"
+              className="hidden mobNav:block w-56"
             />
             <img
               src="/img/Logo/A4.png"
               alt="LogoMarca"
-              className="w-13 block md:hidden"
+              className="w-13 block mobNav:hidden"
             />
           </a>
 
@@ -72,6 +72,13 @@ const NavBar = (props: navProps) => {
               className="text-gray-300 hover:text-gray-300 hover:drop-shadow-lg transition-all relative group py-2"
             >
               Resultados
+              <span className="absolute left-1/2 -bottom-0.5 w-0 h-0.5 bg-mainTheme group-hover:w-full transition-all duration-500 -translate-x-1/2"></span>
+            </a>
+            <a
+              href="#conquistas"
+              className="text-gray-300 hover:text-gray-300 hover:drop-shadow-lg transition-all relative group py-2"
+            >
+              Conquistas
               <span className="absolute left-1/2 -bottom-0.5 w-0 h-0.5 bg-mainTheme group-hover:w-full transition-all duration-500 -translate-x-1/2"></span>
             </a>
             <a

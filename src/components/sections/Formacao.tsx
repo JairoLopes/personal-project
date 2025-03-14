@@ -30,7 +30,7 @@ const Formacao = () => {
               initial={slideUpFadeIn.initial}
               whileInView={slideUpFadeIn.animate}
               transition={{ duration: 0.8 }}
-              className="gradient-text font-bold text-2xl"
+              className="gradient-text font-bold text-xl sm:text-2xl"
             >
               Formação e objetivos
             </motion.h3>
@@ -39,7 +39,7 @@ const Formacao = () => {
               initial={slideUpFadeIn.initial}
               whileInView={slideUpFadeIn.animate}
               transition={{ duration: 0.8 }}
-              className=""
+              className="text-sm sm:text-[16px]"
             >
               Sou Graduado em Educação Física e Atleta. Meu trabalho tem como
               foco o público que tem como principal objetivo mudanças de padrões
@@ -85,7 +85,7 @@ const Formacao = () => {
                rounded transition-all duration-500"
                 >
                   <i className="bx bxs-chevron-down-circle text-mainTheme text-2xl"></i>
-                  <p>{i}</p>
+                  <p className="text-sm sm:text-[16px]">{i}</p>
                 </motion.div>
               ))}
             </div>

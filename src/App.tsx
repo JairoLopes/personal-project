@@ -6,6 +6,10 @@ import Home from "./components/sections/Home";
 import Formacao from "./components/sections/Formacao";
 import Planos from "./components/sections/Planos";
 import Resultados from "./components/sections/Resultados";
+import Conquistas from "./components/sections/Conquistas";
+import FeedBack from "./components/sections/FeedBack";
+import TimeTf from "./components/sections/TimeTf";
+import Footer from "./components/sections/Footer";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -41,6 +45,18 @@ function App() {
 
         {/* RESULTADOS */}
         <Resultados />
+
+        {/* CONQUISTAS */}
+        <Conquistas />
+
+        {/* FEEDBACK */}
+        <FeedBack />
+
+        {/* TIME TF */}
+        <TimeTf />
+
+        {/* FOOTER */}
+        <Footer />
       </div>
     </>
   );
