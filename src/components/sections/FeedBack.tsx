@@ -95,7 +95,6 @@ const FeedBack = () => {
         </motion.p>
 
         {/* SLIDER DE DEPOIMENTOS */}
-
         <Slider {...setting} className="flex text-center w-full">
           {testimonials.map((item, index) => (
             /* CONTAINER QUE REPLICA OS DEPOIMENTOS */
