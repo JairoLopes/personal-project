@@ -5,7 +5,7 @@ const Planos = () => {
   const planosData = [
     {
       plano: "Mensal",
-      valor: 99.99,
+      valor: 149.99,
       tipoPlano: "Plano padrão",
       whats:
         "https://wa.me/558198955665/?text=Tenho%20interesse%20em%20assinar%20o%20plano%20mensal",
