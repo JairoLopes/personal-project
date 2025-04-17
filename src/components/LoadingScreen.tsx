@@ -1,7 +1,7 @@
 /* ALTERAR O ICONE DE CARREGAMENTO, NAO POR A AMPULHETA, POR OUTRO, E ALTERAR PARA AS CORES DE TALLES */
 
 import { useState, useEffect } from "react";
-import { LoaderCircle } from "lucide-react";
+import { BiLoader } from "react-icons/bi";
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -24,7 +24,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
       }`}
     >
       <div className="flex gap-3 mb-4">
-        <LoaderCircle size={54} className="stroke-2 animate-spin" />
+        <BiLoader size={54} className="stroke-2 animate-spin" />
       </div>
 
       <div className="w-[200px] h-[2px] border-gray-800 rounded relative overflow-hidden">

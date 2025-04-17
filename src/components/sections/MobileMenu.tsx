@@ -1,4 +1,4 @@
-import { X } from "lucide-react";
+import { IoCloseSharp } from "react-icons/io5";
 
 interface navProps {
   menuOpen: boolean;
@@ -25,7 +25,7 @@ const MobileMenu = (props: navProps) => {
         /* O QUE FAZ ESSA PROPRIEDADE aria label */
         aria-label="Close menu"
       >
-        <X size={30} className="stroke-2" />
+        <IoCloseSharp size={30} className="stroke-2" />
       </button>
 
       {/* HOME */}

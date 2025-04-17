@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Menu } from "lucide-react";
+import { CiMenuBurger } from "react-icons/ci";
 
 interface navProps {
   menuOpen: boolean;
@@ -41,7 +41,7 @@ const NavBar = (props: navProps) => {
             onClick={() => props.setMenuOpen((prev) => !prev)}
           >
             {/* ICONE HAMBURGUER*/}
-            <Menu size={30} />
+            <CiMenuBurger size={30} />
           </div>
 
           {/*CONTAINER DO MENU */}
